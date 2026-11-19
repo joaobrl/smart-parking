@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: smart-parking
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/smart_parking}
+    username: ${DB_USER:smart_parking}
+    password: ${DB_PASSWORD:smart_parking}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
